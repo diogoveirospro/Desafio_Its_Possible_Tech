@@ -69,7 +69,7 @@ MONGODB_URI='mongodb://localhost:27017/DesafioItsPossibleTech'
 |--------|----------------|---------------------------------------|
 | GET    | /api/tasks     | Lista todas as tarefas.               |
 | POST   | /api/tasks     | Cria uma nova tarefa.                 |
-| PUT    | /api/tasks/:id | Marca tarefa como concluída/pendente. |
+| PATCH  | /api/tasks/:id | Marca tarefa como concluída/pendente. |
 | DELETE | /api/tasks/:id | Remove uma tarefa.                    |
 
 ## 5. Passos para o Desenvolvimento
