@@ -24,11 +24,48 @@ O objetivo é demonstrar competências no desenvolvimento de APIs RESTful com No
 
 ## 2. Estrutura do Projeto
 
-### Fase 1: Backend
+### Backend
 
-To Do
+Backend/
+├─ eslint.config.js
+├─ jest.config.js
+├─ package.json
+├─ tsconfig.json
+└─ src/
+    ├─ index.ts
+    ├─ api/
+    │  ├─ index.ts
+    │  └─ routes/taskRoute.ts
+    ├─ config/index.ts
+    ├─ controllers/
+    │  ├─ TaskController.ts
+    │  └─ IControllers/ITaskController.ts
+    ├─ core/...
+    ├─ dataschema/ITaskPersistence.ts
+    ├─ domain/Task 
+    │           ├─ Entities/Task.ts
+    │           └─ ValueObjects
+    │                   ├─ TaskID.ts
+    │                   ├─ TaskTitle.ts
+    │                   └─ TaskStatus.ts
+    ├─ dto/ITaskDTO.ts
+    ├─ loaders
+    │  ├─ index.ts
+    │  ├─ mongoose.ts
+    │  ├─ express.ts
+    │  ├─ logger.ts
+    │  └─ deoendencyInjector.ts
+    ├─ mappers/TaskMapper.ts
+    ├─ persistence/schemas/TaskSchema.ts
+    ├─ repos/TaskRepository.ts
+    ├─ services
+    │  ├─ TaskService.ts
+    │  ├─ ISevices/ITaskService.ts
+    │  └─ IRepos/ITaskRepository.ts
+    ├─ tests/...
+    └─ utils/IdGenerator.ts
 
-### Fase 2: Frontend
+### Frontend
 
 To Do
 
