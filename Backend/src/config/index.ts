@@ -24,31 +24,23 @@ export default {
   },
 
   repositories: {
-    /*
     task: {
-      name: 'TaskRepository',
-      path: '../repos/TaskRepository.js'
-    }
-    */
+      name: 'taskRepository',
+      path: '../repos/TaskRepository.js',
+    },
   },
 
   services: {
-    /*
     task: {
-      name: 'TaskService',
-      path: '../services/TaskService.js'
-    }
-    */
+      name: 'taskService',
+      path: '../services/TaskService.js',
+    },
   },
 
   controllers: {
-    /*
     task: {
-      name: 'TaskController',
-      path: '../controllers/TaskController.js'
-    }
-
-     */
+      name: 'taskController',
+      path: '../controllers/TaskController.js',
+    },
   },
-
 };

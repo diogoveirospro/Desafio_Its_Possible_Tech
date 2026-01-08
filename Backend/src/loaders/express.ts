@@ -27,6 +27,12 @@ export default ({ app }: { app: express.Application }) => {
 
   app.enable('trust proxy');
 
+  // Basic middlewares
+  app.use(cors());
+  app.use(cookieParser());
+  app.use(express.json());
+  app.use(express.urlencoded({ extended: true }));
+
   // ============================================================
   // 🟢 SWAGGER CONFIGURATION
   // ============================================================

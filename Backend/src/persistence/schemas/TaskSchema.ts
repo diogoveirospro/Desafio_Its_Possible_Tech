@@ -35,12 +35,6 @@ const TaskSchema = new Schema(
 );
 
 /**
- * Create index on taskId for efficient queries
- */
-TaskSchema.index({'task.taskId': 1});
-
-/**
  * Export the Mongoose model
  */
 export default mongoose.model<ITaskPersistence & Document>('Task', TaskSchema);
-

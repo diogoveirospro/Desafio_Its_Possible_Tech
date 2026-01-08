@@ -10,43 +10,32 @@ export default async ({expressApp}: { expressApp: Application }) => {
   const mongoConnection = await mongooseLoader();
   Logger.info('✌️ DB loaded and connected!');
 
-  /*
   const taskSchema = {
-    name: 'taskSchema',
+    name: 'taskModel',
     schema: '../persistence/schemas/TaskSchema.js',
   };
 
   const taskController = {
     name: config.controllers.task.name,
-    path: config.controllers.task.path
+    path: config.controllers.task.path,
   };
 
   const taskRepositories = {
     name: config.repositories.task.name,
-    path: config.repositories.task.path
+    path: config.repositories.task.path,
   };
 
   const taskService = {
     name: config.services.task.name,
-    path: config.services.task.path
+    path: config.services.task.path,
   };
-*/
-  await dependencyInjectorLoader({
-    mongoConnection
 
-    ,
-    schemas: [
-      //taskSchema
-    ],
-    controllers: [
-      //taskController
-    ],
-    repos: [
-      //taskRepositories
-    ],
-    services: [
-      //taskService
-    ]
+  await dependencyInjectorLoader({
+    mongoConnection,
+    schemas: [taskSchema],
+    controllers: [taskController],
+    repos: [taskRepositories],
+    services: [taskService],
   });
   Logger.info('✌️ Schemas, Controllers, Repositories, Services, etc. loaded');
 

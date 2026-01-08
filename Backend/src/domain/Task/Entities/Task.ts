@@ -89,7 +89,6 @@ export class Task extends AggregateRoot<TaskProps> {
     const guardProps = [
       {argument: props.taskId, argumentName: 'taskId'},
       {argument: props.title, argumentName: 'title'},
-      {argument: props.status, argumentName: 'status'},
     ];
 
     const guardResult = Guard.againstNullOrUndefinedBulk(guardProps);
@@ -135,4 +134,3 @@ export class Task extends AggregateRoot<TaskProps> {
 
 
 }
-
