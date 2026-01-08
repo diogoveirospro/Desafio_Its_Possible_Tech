@@ -16,7 +16,7 @@ O objetivo é demonstrar competências no desenvolvimento de APIs RESTful com No
 
 ### Frontend:
 
-- React: Framework para a interface.
+- React & Vite: Framework para a interface.
 
 - Axios: Cliente HTTP para consumo da API.
 
@@ -67,7 +67,50 @@ Backend/
 
 ### Frontend
 
-To Do
+Frontend/
+├─ eslint.config.js
+├─ index.html
+├─ package.json
+├─ tsconfig.json
+├─ tsconfig.app.json
+├─ tsconfig.node.json
+├─ vite.config.ts
+├─ public/
+│  └─ vite.svg
+└─ src/
+    ├─ App.tsx
+    ├─ main.tsx
+    ├─ assets/
+    │  └─ react.svg
+    ├─ components/
+    │  └─ Modal/
+    │     ├─ index.ts
+    │     └─ Modal.tsx
+    ├─ features/
+    │  └─ tasks/
+    │     ├─ components/
+    │     │  ├─ TaskCreate.tsx
+    │     │  ├─ TaskEdit.tsx
+    │     │  └─ TaskList.tsx
+    │     ├─ dtos/
+    │     │  └─ TaskDTO.ts
+    │     ├─ mappers/
+    │     │  ├─ TaskMapper.ts
+    │     │  └─ TaskMapper.spec.ts
+    │     ├─ models/
+    │     │  └─ Task.ts
+    │     └─ viewmodels/
+    │        ├─ TaskCreateViewModel.ts
+    │        ├─ TaskCreateViewModel.spec.ts
+    │        ├─ TaskEditViewModel.ts
+    │        ├─ TaskEditViewModel.spec.ts
+    │        ├─ TaskListViewModel.ts
+    │        └─ TaskListViewModel.spec.ts
+    ├─ services/
+    │  ├─ TaskService.ts
+    │  └─ TaskService.spec.ts
+    └─ styles/
+       └─ global.css
 
 ## 3. Instalação e Configuração
  
@@ -98,7 +141,7 @@ MONGODB_URI='mongodb://localhost:27017/DesafioItsPossibleTech'
 
 2. Instale as dependências: **npm install**
 
-3. Inicie a aplicação: **npm run start**
+3. Inicie a aplicação: **npm run dev**
 
 ## 4. Endpoints da API (Backend)
 
