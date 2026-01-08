@@ -26,91 +26,111 @@ O objetivo é demonstrar competências no desenvolvimento de APIs RESTful com No
 
 ### Backend
 
+```
 Backend/
-├─ eslint.config.js
-├─ jest.config.js
-├─ package.json
-├─ tsconfig.json
-└─ src/
-    ├─ index.ts
-    ├─ api/
-    │  ├─ index.ts
-    │  └─ routes/taskRoute.ts
-    ├─ config/index.ts
-    ├─ controllers/
-    │  ├─ TaskController.ts
-    │  └─ IControllers/ITaskController.ts
-    ├─ core/...
-    ├─ dataschema/ITaskPersistence.ts
-    ├─ domain/Task 
-    │           ├─ Entities/Task.ts
-    │           └─ ValueObjects
-    │                   ├─ TaskID.ts
-    │                   ├─ TaskTitle.ts
-    │                   └─ TaskStatus.ts
-    ├─ dto/ITaskDTO.ts
-    ├─ loaders
-    │  ├─ index.ts
-    │  ├─ mongoose.ts
-    │  ├─ express.ts
-    │  ├─ logger.ts
-    │  └─ deoendencyInjector.ts
-    ├─ mappers/TaskMapper.ts
-    ├─ persistence/schemas/TaskSchema.ts
-    ├─ repos/TaskRepository.ts
-    ├─ services
-    │  ├─ TaskService.ts
-    │  ├─ ISevices/ITaskService.ts
-    │  └─ IRepos/ITaskRepository.ts
-    ├─ tests/...
-    └─ utils/IdGenerator.ts
+├── eslint.config.js
+├── jest.config.js
+├── package.json
+├── tsconfig.json
+└── src/
+    ├── index.ts
+    ├── api/
+    │   ├── index.ts
+    │   └── routes/
+    │       └── taskRoute.ts
+    ├── config/
+    │   └── index.ts
+    ├── controllers/
+    │   ├── TaskController.ts
+    │   └── IControllers/
+    │       └── ITaskController.ts
+    ├── core/
+    │   └── ...
+    ├── dataschema/
+    │   └── ITaskPersistence.ts
+    ├── domain/
+    │   └── Task/
+    │       ├── Entities/
+    │       │   └── Task.ts
+    │       └── ValueObjects/
+    │           ├── TaskID.ts
+    │           ├── TaskTitle.ts
+    │           └── TaskStatus.ts
+    ├── dto/
+    │   └── ITaskDTO.ts
+    ├── loaders/
+    │   ├── index.ts
+    │   ├── mongoose.ts
+    │   ├── express.ts
+    │   ├── logger.ts
+    │   └── dependencyInjector.ts
+    ├── mappers/
+    │   └── TaskMapper.ts
+    ├── persistence/
+    │   └── schemas/
+    │       └── TaskSchema.ts
+    ├── repos/
+    │   └── TaskRepository.ts
+    ├── services/
+    │   ├── TaskService.ts
+    │   ├── IServices/
+    │   │   └── ITaskService.ts
+    │   └── IRepos/
+    │       └── ITaskRepository.ts
+    ├── tests/
+    │   └── ...
+    └── utils/
+        └── IdGenerator.ts
+```
 
 ### Frontend
 
+```
 Frontend/
-├─ eslint.config.js
-├─ index.html
-├─ package.json
-├─ tsconfig.json
-├─ tsconfig.app.json
-├─ tsconfig.node.json
-├─ vite.config.ts
-├─ public/
-│  └─ vite.svg
-└─ src/
-    ├─ App.tsx
-    ├─ main.tsx
-    ├─ assets/
-    │  └─ react.svg
-    ├─ components/
-    │  └─ Modal/
-    │     ├─ index.ts
-    │     └─ Modal.tsx
-    ├─ features/
-    │  └─ tasks/
-    │     ├─ components/
-    │     │  ├─ TaskCreate.tsx
-    │     │  ├─ TaskEdit.tsx
-    │     │  └─ TaskList.tsx
-    │     ├─ dtos/
-    │     │  └─ TaskDTO.ts
-    │     ├─ mappers/
-    │     │  ├─ TaskMapper.ts
-    │     │  └─ TaskMapper.spec.ts
-    │     ├─ models/
-    │     │  └─ Task.ts
-    │     └─ viewmodels/
-    │        ├─ TaskCreateViewModel.ts
-    │        ├─ TaskCreateViewModel.spec.ts
-    │        ├─ TaskEditViewModel.ts
-    │        ├─ TaskEditViewModel.spec.ts
-    │        ├─ TaskListViewModel.ts
-    │        └─ TaskListViewModel.spec.ts
-    ├─ services/
-    │  ├─ TaskService.ts
-    │  └─ TaskService.spec.ts
-    └─ styles/
-       └─ global.css
+├── eslint.config.js
+├── index.html
+├── package.json
+├── tsconfig.json
+├── tsconfig.app.json
+├── tsconfig.node.json
+├── vite.config.ts
+├── public/
+│   └── vite.svg
+└── src/
+    ├── App.tsx
+    ├── main.tsx
+    ├── assets/
+    │   └── react.svg
+    ├── components/
+    │   └── Modal/
+    │       ├── index.ts
+    │       └── Modal.tsx
+    ├── features/
+    │   └── tasks/
+    │       ├── components/
+    │       │   ├── TaskCreate.tsx
+    │       │   ├── TaskEdit.tsx
+    │       │   └── TaskList.tsx
+    │       ├── dtos/
+    │       │   └── TaskDTO.ts
+    │       ├── mappers/
+    │       │   ├── TaskMapper.ts
+    │       │   └── TaskMapper.spec.ts
+    │       ├── models/
+    │       │   └── Task.ts
+    │       └── viewmodels/
+    │           ├── TaskCreateViewModel.ts
+    │           ├── TaskCreateViewModel.spec.ts
+    │           ├── TaskEditViewModel.ts
+    │           ├── TaskEditViewModel.spec.ts
+    │           ├── TaskListViewModel.ts
+    │           └── TaskListViewModel.spec.ts
+    ├── services/
+    │   ├── TaskService.ts
+    │   └── TaskService.spec.ts
+    └── styles/
+        └── global.css
+```
 
 ## 3. Instalação e Configuração
  
